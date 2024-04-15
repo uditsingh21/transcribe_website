@@ -1,0 +1,97 @@
+
+    html {
+      font-size: 50px;
+      box-sizing: border-box;
+        color: #0ef;
+        overflow: auto;
+
+      user-select: none;
+      background-position: center;
+      background-attachment: fixed;
+      /*padding-left: 0;*/
+        text-shadow: 0 0 10px;
+        animation: colorful 6s infinite;
+        /*background-image: url("WhatsApp Image 2024-04-05 at 22.21.35_01b1a1ef.jpg");*/
+    }
+    html::before{
+        content: '';
+        position: absolute;
+        left: 100%;
+        width: 100px;
+        border-left: 2px solid #0ef ;
+        animation: typing  1.5s steps(1) infinite alternate ;
+
+    }
+
+    body {
+
+
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        background-color: black;
+    }
+    h1{
+      font-size: 40px;
+      color: white;
+        font-family: "Rubik", sans-serif;
+      text-shadow: 3px 0 antiquewhite;
+    
+     text-align: left;
+        padding: 20px;
+
+    }
+
+    .words {
+      max-width: 1000px;
+        height: 100vh;
+      margin: 50px auto;
+      background:black;
+      border-radius: 5px;
+      box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+      padding: 1rem 2rem 1rem 5rem;
+
+
+      position: relative;
+      line-height: 3rem;
+    }
+    
+    p {
+      margin: 0 0 3rem;
+    }
+
+    .words:before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      top: 0;
+      left: 30px;
+      bottom: 0;
+      border: 1px solid;
+      border-color: transparent #efe4e4;
+    }
+    button{
+        padding: 30px;
+        margin: 20px;
+        border-radius: 50px;
+        color: rgba(0, 0, 0, 0.68);
+        font-family: Arial, sans-serif;
+        background-color: #0ef;
+        position: relative;
+        left: 1500px;
+        top: 93px;
+        font-weight: bold;
+        box-shadow: cyan;
+        font-size: 20px;
+
+
+
+
+    }
+
+@keyframes colorful{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speech Detection</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+  </style>
+</head>
+<body>
+<!--<button id="startScriptBtn">START </button>-->
+<div class="nav">
+<h1>Transcribe</h1>
+  <div class="words" contenteditable>
+  </div>
+</div>
+
+
+  <script src="index.js" charset="utf-8"></script>
+<script>
+  var words = document.getElementById("words");
+  // allow 1px inaccuracy by adding 1
+  var isScrolledToBottom = words.scrollHeight - words.clientHeight <= words.scrollTop + 1;
+  if(isScrolledToBottom)
+    words.scrollTop = words.scrollHeight - words.clientHeight;
+
+</script>
+
+
+
+  </body>
+  </html>
